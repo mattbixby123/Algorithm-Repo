@@ -1,4 +1,5 @@
-// index.js
+// O(n x d) time | O(n) space - where n is the target amount and d is the number of coin denominations
+
 export function numberOfWaysToMakeChange(n, denoms) {
   // 1. Initialize an array to store the number of ways for each amount
   const ways = new Array(n + 1).fill(0);

@@ -1,3 +1,5 @@
+// O(n) time | O(1) space - where n is the length of the input array
+
 export function maxSubsetSumNoAdjacent(array) {
   // Step 1: Handle edge cases
   // If the array is empty, the maximum sum is 0

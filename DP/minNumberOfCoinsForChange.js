@@ -1,3 +1,5 @@
+// O(n x d) time | O(n) space - where n is the target amount and d is the number of coin denominations
+
 export function minNumberOfCoinsForChange(n, denoms) {
 
   // 1. Initialize an array to store the minimum coins needed for each amount

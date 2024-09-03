@@ -1,3 +1,5 @@
+// O(n^2) time | O(n) space - where n is the length of the input array
+
 export function maxSumIncreasingSubsequence(array) {
   // Initialize sums array with a copy of the input array
   // This will store the maximum sum of increasing subsequences ending at each index
@@ -48,3 +50,9 @@ function buildSequence(array, sequences, currentIndex) {
   // Return the reconstructed sequence
   return sequence;
 }
+
+// example usage
+
+const array = [10, 70, 20, 30, 50, 11, 30];
+const [maxSum, sequence] = maxSumIncreasingSubsequence(array);
+console.log(`When looking at the input array: ${array}, the maximum sum of an increasing subsequence is: ${maxSum}, and the sequence that produces it is: [${sequence}]`);

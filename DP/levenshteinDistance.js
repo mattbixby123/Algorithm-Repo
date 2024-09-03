@@ -1,3 +1,4 @@
+// O(n x m) time | O(min(n, m)) space - where n and m are the lneghts of the two input string
 export function levenshteinDistance(str1, str2) {
   // Create a 2D array to store distances
   const dp = Array(str1.length + 1).fill().map(() => Array(str2.length + 1).fill(0));
