@@ -19,4 +19,8 @@ Welcome to the Algorithm Repository! This repository contains various algorithms
 
 #### f. [levenshteinDistance](DP/levenshteinDistance.js)
 
+#### g. [numbersInPi](DP/numbersInPi.js)
+
+#### h. [diceThrows](DP/diceThrows.js)
+
 
