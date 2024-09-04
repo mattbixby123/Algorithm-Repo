@@ -24,3 +24,6 @@ Welcome to the Algorithm Repository! This repository contains various algorithms
 #### h. [diceThrows](DP/diceThrows.js)
 
 
+### 2. 
+
+
