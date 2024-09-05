@@ -14,3 +14,13 @@ export const coinChange = function (coins, amount) {
 
   return dp[amount] == amount + 1 ? -1 : dp[amount]
 };
+
+// example usage:
+const coins = [1, 2, 5];
+const amount = 11;
+const result = coinChange(coins, amount)
+
+console.log(`${result}`);
+
+// Output: 3
+// Explanation: 11 = 5 + 5 + 1 (3 coins used)

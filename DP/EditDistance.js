@@ -28,4 +28,10 @@ export const minDistance = (word1, word2) => {
   return lookup[m][n];
 };
 
-// word 1 horse word 2 ros output = 3
+// example usage - output should be 3
+const word1 = "horse";
+const word2 = "ros";
+
+const result = minDistance(word1, word2);
+
+console.log(`${result}`);

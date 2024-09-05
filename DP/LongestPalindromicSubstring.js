@@ -38,3 +38,15 @@ export const longestPalindrome = function (s) {
   // Return the longest palindromic substring
   return s.substring(start, start + maxLength);
 };
+
+
+// Example 1:
+
+const s = "babad"
+
+const result = longestPalindrome(s)
+
+console.log(`${result}`);
+
+// Output: "bab"
+// Explanation: "aba" is also a valid answer.

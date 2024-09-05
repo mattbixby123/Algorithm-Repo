@@ -20,3 +20,9 @@ export const uniquePaths = function (m, n) {
 };
 
 // example m = 3 n =7 output = 28
+
+const m = 3;
+const n = 7;
+const result = uniquePaths(m, n)
+
+console.log(`${result}`);
