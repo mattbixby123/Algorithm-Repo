@@ -37,3 +37,26 @@ export const findSubstring = function (s, words) {
 
   return result;
 };
+
+// Example Usages:
+
+// Example 1
+const s1 = "barfoothefoobarman";
+const words1 = ["foo", "bar"];
+console.log("Example 1:");
+console.log("Input: s =", s1, ", words =", words1);
+console.log("Output:", findSubstring(s1, words1));
+
+// Example 2
+const s2 = "wordgoodgoodgoodbestword";
+const words2 = ["word", "good", "best", "word"];
+console.log("\nExample 2:");
+console.log("Input: s =", s2, ", words =", words2);
+console.log("Output:", findSubstring(s2, words2));
+
+// Example 3
+const s3 = "barfoofoobarthefoobarman";
+const words3 = ["bar", "foo", "the"];
+console.log("\nExample 3:");
+console.log("Input: s =", s3, ", words =", words3);
+console.log("Output:", findSubstring(s3, words3));

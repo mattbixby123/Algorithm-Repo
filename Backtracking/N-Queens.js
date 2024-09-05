@@ -45,3 +45,31 @@ export const solveNQueens = function (n) {
   nQueen(mat, 0);
   return res;
 };
+
+// Example Usages:
+// Example 1
+console.log("Example 1:");
+console.log("Input: n = 4");
+console.log("Output:", solveNQueens(4));
+
+// Example 2
+console.log("\nExample 2:");
+console.log("Input: n = 1");
+console.log("Output:", solveNQueens(1));
+
+// Additional example
+console.log("\nAdditional Example:");
+console.log("Input: n = 5");
+console.log("Output:", solveNQueens(5));
+
+// Function to print the chessboard
+// function printChessboard(solution) {
+//   for (let row of solution) {
+//     console.log(row);
+//   }
+//   console.log(); // Empty line for separation
+// }
+
+// // Print the first solution for n = 4 in a more visual way
+// console.log("\nVisual representation of first solution for n = 4:");
+// printChessboard(solveNQueens(4)[0]);

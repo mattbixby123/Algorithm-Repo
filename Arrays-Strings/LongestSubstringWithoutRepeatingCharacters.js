@@ -27,3 +27,25 @@ export const lengthOfLongestSubstring = function (s) {
 
   return maxLength;
 };
+
+// Example Usages:
+
+// Example 1
+console.log("Example 1:");
+console.log("Input: s = \"abcabcbb\"");
+console.log("Output:", lengthOfLongestSubstring("abcabcbb"));
+
+// Example 2
+console.log("\nExample 2:");
+console.log("Input: s = \"bbbbb\"");
+console.log("Output:", lengthOfLongestSubstring("bbbbb"));
+
+// Example 3
+console.log("\nExample 3:");
+console.log("Input: s = \"pwwkew\"");
+console.log("Output:", lengthOfLongestSubstring("pwwkew"));
+
+// Additional example
+console.log("\nAdditional Example:");
+console.log("Input: s = \"dvdf\"");
+console.log("Output:", lengthOfLongestSubstring("dvdf"));

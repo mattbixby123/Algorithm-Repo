@@ -18,8 +18,11 @@ export const rotate = function (matrix) {
   }
 };
 
+// Example Usages:
+
+
 const matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 const result = rotate(matrix)
 
-console.log(`${matrix}`);
+console.log(`${result}`);

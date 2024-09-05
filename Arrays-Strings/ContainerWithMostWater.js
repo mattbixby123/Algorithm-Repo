@@ -37,3 +37,23 @@ export const maxArea = function (height) {
   // Return the maximum area found
   return maxArea;
 };
+
+// Example Usages:
+
+// Example 1
+const height1 = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+console.log("Example 1:");
+console.log("Input:", height1);
+console.log("Output:", maxArea(height1));
+
+// Example 2
+const height2 = [1, 1];
+console.log("\nExample 2:");
+console.log("Input:", height2);
+console.log("Output:", maxArea(height2));
+
+// Additional example
+const height3 = [4, 3, 2, 1, 4];
+console.log("\nAdditional Example:");
+console.log("Input:", height3);
+console.log("Output:", maxArea(height3));
