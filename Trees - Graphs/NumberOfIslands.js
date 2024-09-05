@@ -17,7 +17,7 @@ export const numIslands = function (grid) {
   return islandCount;
 };
 
-var markIsland = function (grid, xPos, yPos) {
+export const markIsland = function (grid, xPos, yPos) {
   // Check to see if we are currently in the water
   if (xPos < 0 || yPos < 0 || xPos >= grid.length || yPos >= grid[0].length || grid[xPos][yPos] == "0") {
     return;
@@ -31,4 +31,22 @@ var markIsland = function (grid, xPos, yPos) {
   markIsland(grid, xPos, yPos + 1); // right
   markIsland(grid, xPos - 1, yPos); // up
   markIsland(grid, xPos, yPos - 1); // left
-}
+};
+
+// Example usage
+// Input: grid = [
+//   ["1","1","0","0","0"],
+//   ["1","1","0","0","0"],
+//   ["0","0","1","0","0"],
+//   ["0","0","0","1","1"]
+// ]
+// Expected Output: 3
+const grid = [
+  ["1", "1", "0", "0", "0"],
+  ["1", "1", "0", "0", "0"],
+  ["0", "0", "1", "0", "0"],
+  ["0", "0", "0", "1", "1"]
+]
+const result = numIslands(grid);
+console.log(`${result}`);
+

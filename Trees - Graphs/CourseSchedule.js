@@ -3,7 +3,7 @@
  * @param {number[][]} prerequisites
  * @return {boolean}
  */
-var canFinish = function (numCourses, prerequisites) {
+export const canFinish = function (numCourses, prerequisites) {
   // Create adjacency list
   const graph = Array(numCourses).fill().map(() => []);
   for (const [course, prereq] of prerequisites) {
@@ -40,3 +40,14 @@ var canFinish = function (numCourses, prerequisites) {
 
   return true;
 };
+
+// Example usage:
+console.log("Example 1:");
+console.log("Input: numCourses = 2, prerequisites = [[1,0]]");
+console.log("Output:", canFinish(2, [[1, 0]]));
+console.log("Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible.");
+
+console.log("\nExample 2:");
+console.log("Input: numCourses = 2, prerequisites = [[1,0],[0,1]]");
+console.log("Output:", canFinish(2, [[1, 0], [0, 1]]));
+console.log("Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.");
