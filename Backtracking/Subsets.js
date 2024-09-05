@@ -26,3 +26,22 @@ export const subsets = function (nums) {
 
   return result;
 };
+
+// Example Usage Cases:
+// Example 1
+const nums1 = [1, 2, 3];
+console.log("Example 1:");
+console.log("Input:", nums1);
+console.log("Output:", subsets(nums1));
+
+// Example 2
+const nums2 = [0];
+console.log("\nExample 2:");
+console.log("Input:", nums2);
+console.log("Output:", subsets(nums2));
+
+// Additional example
+const nums3 = [1, 2, 3, 4];
+console.log("\nAdditional Example:");
+console.log("Input:", nums3);
+console.log("Output:", subsets(nums3));
