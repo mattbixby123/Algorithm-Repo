@@ -1,15 +1,9 @@
-/**
- * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
- */
-/**
- * @param {ListNode[]} lists
- * @return {ListNode}
- */
-export const mergeKLists = function (lists) {
+function ListNode(val, next) {
+  this.val = (val === undefined ? 0 : val)
+  this.next = (next === undefined ? null : next)
+}
+
+const mergeKLists = function (lists) {
   // Helper function to merge two sorted lists
   function mergeTwoLists(l1, l2) {
     let dummy = new ListNode(0);
@@ -47,3 +41,52 @@ export const mergeKLists = function (lists) {
 
   return lists[0];
 };
+
+// Helper function to create a linked list from an array
+function createLinkedList(arr) {
+  let dummy = new ListNode(0);
+  let current = dummy;
+  for (let val of arr) {
+    current.next = new ListNode(val);
+    current = current.next;
+  }
+  return dummy.next;
+}
+
+// Helper function to convert a linked list to an array
+function linkedListToArray(head) {
+  let arr = [];
+  while (head) {
+    arr.push(head.val);
+    head = head.next;
+  }
+  return arr;
+}
+
+// Example 1
+console.log("Example 1:");
+const lists1 = [[1, 4, 5], [1, 3, 4], [2, 6]].map(createLinkedList);
+console.log(`Input: lists = [[1,4,5],[1,3,4],[2,6]]`);
+console.log(`Output: ${linkedListToArray(mergeKLists(lists1))}`);
+console.log("Explanation: The linked-lists are:");
+console.log("[");
+console.log("  1 -> 4 -> 5,");
+console.log("  1 -> 3 -> 4,");
+console.log("  2 -> 6");
+console.log("]");
+console.log("merging them into one sorted list:");
+console.log("1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6");
+console.log();
+
+// Example 2
+console.log("Example 2:");
+const lists2 = [];
+console.log(`Input: lists = []`);
+console.log(`Output: ${linkedListToArray(mergeKLists(lists2))}`);
+console.log();
+
+// Example 3
+console.log("Example 3:");
+const lists3 = [[]].map(createLinkedList);
+console.log(`Input: lists = [[]]`);
+console.log(`Output: ${linkedListToArray(mergeKLists(lists3))}`);
