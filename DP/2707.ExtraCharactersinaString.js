@@ -14,3 +14,4 @@ var minExtraChar = function (s, dictionary) {
   }
   return dp(0);
 };
+// example usage:
